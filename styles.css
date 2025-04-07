@@ -1,0 +1,57 @@
+@import url("reset.css");
+
+#home {
+  background-color: navy !important;
+  color: white;
+}
+
+.section {
+  background-color: red;
+}
+
+#home {
+  background-color: aqua;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.nav-home {
+  color: blue;
+}
+
+.nav-home > button {
+  color: blue;
+}
+
+.nav-home ~ .nav-item {
+  background-color: beige;
+}
+
+.main-description + .cta-button {
+  background-color: blue;
+  color: white;
+  transition: all 0.5s;
+}
+
+.main-description + .cta-button:hover {
+  background-color: hotpink;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list > .nav-item ~ .nav-item::before {
+  content: "";
+  width: 1px;
+  height: 10px;
+  background-color: gray;
+  display: inline-block;
+  margin: 0 4px;
+}
+
+.nav-list > .nav-item ~ .nav-item::after {
+  content: "";
+}
