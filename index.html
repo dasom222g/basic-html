@@ -6,10 +6,107 @@
     <title>HTML 실습</title>
   </head>
   <body>
-    <div></div>
     <div>
       <p>p태그 작성중..</p>
       <a href="https://www.naver.com/" target="_blank">네이버 링크로 이동</a>
     </div>
+
+    <div>
+      <h1>제목태그 1</h1>
+      <h2>제목태그 2</h2>
+      <h3>제목태그 3</h3>
+      <h4>제목태그 4</h4>
+      <h5>제목태그 5</h5>
+      <h6>제목태그 6</h6>
+    </div>
+
+    <div>
+      <p>
+        Lorem ipsum <strong>dolor</strong>, sit amet consectetur adipisicing
+        elit. Quaerat possimus impedit saepe sint ipsam maiores minima esse
+        facilis eum nobis minus ex ut, sapiente consequatur necessitatibus rem.
+        Voluptas minus at numquam excepturi incidunt. Possimus, id. Nam, et
+        omnis. Placeat incidunt sunt voluptatum dicta earum voluptates
+        distinctio nobis in quae <span style="color: red">voluptatem</span>!
+      </p>
+    </div>
+
+    <div>
+      <!-- <img
+        src="https://plus.unsplash.com/premium_photo-1700401698767-d6535274146d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="크림치즈 이미지"
+      /> -->
+    </div>
+
+    <!-- 순서가 있는 리스트 -->
+    <ol>
+      <li>첫번째 아이템</li>
+      <li>두번째 아이템</li>
+      <li>세번째 아이템</li>
+    </ol>
+
+    <!-- 순서가 없는 리스트 -->
+    <ul>
+      <li>list 1</li>
+      <li>list 2</li>
+      <li>list 3</li>
+      <li>list 4</li>
+      <li>list 5</li>
+    </ul>
+
+    <!-- 로그인 폼요소 -->
+    <h3>로그인</h3>
+    <form style="border: 1px solid blue">
+      <label for="userid">아이디:</label>
+      <input
+        type="text"
+        name="userid"
+        id="userid"
+        placeholder="사용자 아이디"
+        value=""
+        required
+      />
+      <br />
+      <label for="userpassword">패스워드:</label>
+      <input
+        type="password"
+        name="userpassword"
+        id="userpassword"
+        placeholder="사용자 비밀번호"
+        value=""
+        required
+      />
+      <input type="submit" value="로그인" />
+    </form>
+
+    <!-- 구분선 -->
+    <hr />
+    <!-- 체크박스, 라디오, select태그 -->
+    <form style="border: 1px solid red">
+      <p>취미를 선택하세요</p>
+
+      <input type="checkbox" name="hobby" value="reading" id="reading" />
+      <label for="reading">독서</label>
+
+      <input type="checkbox" name="hobby" value="watching TV" />TV보기
+      <input type="checkbox" name="hobby" value="coding" />코딩하기
+
+      <p>성별을 선택해주세요</p>
+      <input type="radio" name="gender" value="male" id="male" />
+      <label for="male">남성</label>
+
+      <input type="radio" name="gender" value="female" id="female" />
+      <label for="female">여성</label>
+
+      <br />
+      <label for="food">음식 선택:</label>
+      <select name="food" id="food">
+        <option value="">선택해주세요</option>
+        <option value="ttokppokki" selected>떡볶이</option>
+        <option value="chicken">치킨</option>
+      </select>
+
+      <button type="submit">제출하기</button>
+    </form>
   </body>
 </html>
