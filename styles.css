@@ -3,6 +3,8 @@
 #home {
   background-color: navy !important;
   color: white;
+  /* padding: 30px 10px 30px 10px; */
+  padding: 30px 10px;
 }
 
 .section {
@@ -54,4 +56,15 @@
 
 .nav-list > .nav-item ~ .nav-item::after {
   content: "";
+}
+
+.box {
+  border: 1px solid red;
+  width: 200px;
+  padding: 8px;
+  display: inline;
+}
+
+.box li {
+  padding: 2px 0;
 }
